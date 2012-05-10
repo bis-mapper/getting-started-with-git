@@ -1,17 +1,14 @@
 # Getting started with GIT
 
-##Sign up for github account
-https://github.com/plans - choose the free account
+###Install GIT
 
-##Install GIT
+http://help.github.com/set-up-git-redirect
 
-Windows users - http://help.github.com/win-set-up-git/
-Linux users - http://help.github.com/linux-set-up-git/
-
-##Creating repository
+###Creating repository - Hello World Example in your account
 http://help.github.com/create-a-repo/
+Make sure not to check the create readme while creating your repository, you'll do that as the next step.
 
-##Local PC Configuration
+###Local PC Configuration
 You should now have GIT bash installed on your machine.  This is similar to the windows command prompt, but also has unix/linux flavored commands as well.  This will be the home base for pushing your files up to github.
 
 If you go with the default setup your home directory should be as follows
@@ -23,40 +20,35 @@ Although in the terminal it will look something like
 winne@EDWINN ~/
 </pre> 
 
-##Creating a working folder
 
-I decided to create a folder called bis-files, but you can name it whatever you want.   
+###Creating another repository on Github - This time in BIS-MAPPER group
+You must first be a member in order to do this so contact me wickchucked@gmail.com to get set up
+
+Add a new repository on git hub and name it something unique (I'll use bis-files as an example)
+Don't check the readme..
+
+###Creating a working folder in git bash
+
+Use the same folder name as the repository you just created. 
 <pre>
 mkdir bis-files
-</pre>
-then 
-<pre>
 cd bis-files
+git init
+touch README
+git add README
+git commit -m 'Your commit message here'
+git remote add origin git@github.com:edwinn/bis-files.git
+git push -u origin master
 </pre>
 
-##Creating a new repository - https://github.com/new
+Hopefully all went well!  If not google is your friend, or shoot me an email.
 
-Be sure not to check the create readme while creating the repo, or you will be out of sync.  Follow the directions on the github page and add the readme.
-
-Once you have successfully pushed the files up to github you can then start adding files to the directory that you created.  
-
-Git is a version control system that will track the status of your files, so in order to push your files to github you will need to.
-
+Now that you have it set up you can drop in any files you want into that folder you created and simply
 <pre>
 git add .
 git commit -m 'Your commit message here'
 git push
 </pre>
 
-This is assuming you have already added the remote origin and pushed successfully already.  
-
-You can create as many new repositories as you'd like, or you can keep adding files to the repository that you just created.
-
-###When you do the following
-<pre>
-git add .
-git commit -m 'Your commit message here'
-git push
-</pre>
-
-It will only update the new additions that you made, so you won't have 3 versions of the same file, only the most up to date version.  This is very nice to not have to manually delete and keep track of multiple versions of the same files.  There are also, some pretty nice graphs and commit history on here that allow you to see all the past changes.
+All of the files that you put into that folder will be pushed up to github!  You can keep adding files and changing
+any of the other ones, and only the most recent version of that file will show up on github.
