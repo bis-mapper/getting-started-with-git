@@ -13,13 +13,14 @@ You should now have GIT bash installed on your machine.  This is similar to the 
 
 If you go with the default setup your home directory should be as follows
 
-####C:\Documents and Settings\yourusername\
+<pre>
+C:\Documents and Settings\yourusername\
+</pre>
 
-Although in the terminal it will look something like
+Although in the GIT bash terminal it will look something like
 <pre>
 winne@EDWINN ~/
 </pre> 
-
 
 ###Creating another repository on Github - This time in BIS-MAPPER group
 You must first be a member in order to do this so contact me wickchucked@gmail.com to get set up
@@ -31,23 +32,23 @@ Don't check the readme..
 
 Use the same folder name as the repository you just created. 
 <pre>
-mkdir bis-files
-cd bis-files
-git init
-touch README
-git add README
-git commit -m 'Your commit message here'
-git remote add origin git@github.com:edwinn/bis-files.git
-git push -u origin master
+winne@EDWINN ~/mkdir bis-files
+winne@EDWINN ~/cd bis-files
+winne@EDWINN ~/bis-files/git init
+winne@EDWINN ~/bis-files/touch README
+winne@EDWINN ~/bis-files/git add README
+winne@EDWINN ~/bis-files/git commit -m 'Your commit message here'
+winne@EDWINN ~/bis-files/git remote add origin git@github.com:edwinn/bis-files.git
+winne@EDWINN ~/bis-files/git push -u origin master
 </pre>
 
 Hopefully all went well!  If not google is your friend, or shoot me an email.
 
 Now that you have it set up you can drop in any files you want into that folder you created and simply
 <pre>
-git add .
-git commit -m 'Your commit message here'
-git push
+winne@EDWINN ~/bis-files/git add .
+winne@EDWINN ~/bis-files/git commit -m 'Your commit message here'
+winne@EDWINN ~/bis-files/git push
 </pre>
 
 All of the files that you put into that folder will be pushed up to github!  You can keep adding files and changing
